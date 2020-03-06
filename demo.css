@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100vw;
+}
+
+header{
+    background-color: teal /*#35424a*/;
+    padding-top: 15px;
+    min-height: 45px;
+}
+
+header a {
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+header ul {
+   margin: 0px;
+   padding: 0px;
+}
+
+header li {
+    list-style: none;
+    display: inline;
+    padding: 0 20px 0 20px;
+   
+}
+
+header #logo{
+ float: left;
+ margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight{
+    color:#ffffff;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+header a:hover{
+    color: indianred;
+    font-weight: bold;
+}
+
+#showcase{
+    background: url("img/breakfast.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 92vh; 
+    text-align: center;
+}
+ 
+#showcase h1{
+    margin-top: 100px;
+    color: #ffffff;
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 30px;
+    color: teal;
+}
+
+button{
+padding: 20px;
+color:#ffffff;
+background-color: teal;
+border-radius: 10px;
+}
+
+.container-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3em 1.6em 1.6em;
+    grid-auto-rows: 3em;
+    grid-gap: 10px;
+}
+
+.container-2 div:nth-child(1), div:nth-child(6){
+    background-color: aqua;
+}
+
+.container-2 div:nth-child(2), div:nth-child(4){
+    background-color: blueviolet;
+}
+
+.container-2 div:nth-child(3), div:nth-child(7){
+    background-color: chocolate;
+}
+
+.container-2 div:nth-child(5), div:nth-child(8){
+    background-color: cornflowerblue;
+}
+
+
+@media all and (max-width:520px) {
+    header {
+       text-align: center;
+    }
+    #showcase{
+        text-align: center;
+    }
+    #showcase h1{
+        margin-top: 50px;
+        font-size: 60px;
+    }
+    #showcase p{
+        font-size: 30px;
+    }
+}
