@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    overflow: hidden;
+  overflow-x: hidden;
 }
 
 body{
@@ -87,30 +87,85 @@ background-color: teal;
 border-radius: 10px;
 }
 
+.gallery, .info{
+    width: 100vw;
+}
+
+.show, .about{
+    margin: 40px 0px 40px 0px;
+    text-align: center;
+    font-size: 40px;
+    color: teal;
+}
+
+.container-2, .bio{
+    width: 80vw;
+    margin: auto;
+}
+
 .container-2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 3em 1.6em 1.6em;
+    grid-template-rows: 20em 20em 20em;
     grid-auto-rows: 3em;
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 
 .container-2 div:nth-child(1), div:nth-child(6){
-    background-color: aqua;
+    background: url("img/asparagus.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px 10px;
 }
 
 .container-2 div:nth-child(2), div:nth-child(4){
-    background-color: blueviolet;
+    background: url("img/carrots.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
 }
 
 .container-2 div:nth-child(3), div:nth-child(7){
-    background-color: chocolate;
+    background: url("img/eclair.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
 }
 
 .container-2 div:nth-child(5), div:nth-child(8){
-    background-color: cornflowerblue;
+    background: url("img/hamburger.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
 }
 
+.container-2 div:nth-child(9){
+    background: url("img/spaghetti.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.bio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30em 30em;
+    grid-gap: 20px;
+}
+
+.bio div:nth-child(1){
+    background: url("img/juice.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.bio p {
+    justify-content: center;
+    background-color: blanchedalmond;
+    line-height: 35px;
+    font-size: 19px;
+}
 
 @media all and (max-width:520px) {
     header {
